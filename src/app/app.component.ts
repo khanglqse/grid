@@ -7,20 +7,7 @@ import { DetailCellRenderer } from './detail-cell-renderer.component';
 
 @Component({
   selector: 'app-root',
-  template: `<ag-grid-angular
-    #agGrid
-    style="width: 100%; height: 500px;"
-    id="myGrid"
-    class="ag-theme-alpine"
-    [masterDetail]="true"
-    [detailCellRenderer]="detailCellRenderer"
-    [frameworkComponents]="frameworkComponents"
-    [columnDefs]="columnDefs"
-    [defaultColDef]="defaultColDef"
-    [rowData]="rowData"
-    (firstDataRendered)="onFirstDataRendered($event)"
-    (gridReady)="onGridReady($event)"
-  ></ag-grid-angular> hello`,
+  templateUrl: './app.component.html',
 })
 export class AppComponent {
   public gridApi;
